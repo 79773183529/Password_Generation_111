@@ -1,0 +1,42 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<h1 class="container text-center">Password Generator</h1>
+<br>
+<form action="{% url 'pass' %}" class="container text-center">
+    <select name="length">
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23" selected="selected">23</option>
+        <option value="24">24</option>
+        <option value="49">49</option>
+    </select> Length
+    <br>
+    <br>
+    <input type="checkbox" name="uppercase">Uppercase
+    <br>
+    <br>
+    <input type="checkbox" name="numbers">Numbers
+    <br>
+    <br>
+    <input type="checkbox" name="special">Special char
+    <br>
+    <br>
+    <select name="login">
+            <option value="Dmitry">Dmitry</option>
+            <option value="+79773183529">+79773183529</option>
+            <option value="ivlev.dm.v@yandex.ru">ivlev.dm.v@yandex.ru</option>
+            <option value="DmitryIvlev">DmitryIvlev</option>
+            <option value="Dmitry_1011">Dmitry_1011</option>
+    </select>Login
+    <br><br><br>
+    <input type="text" name="site_name">Site Name
+    <br><br><br>
+    <input type="submit" value="GENERATE" class="btn btn-primary">
+</form>
+
+
