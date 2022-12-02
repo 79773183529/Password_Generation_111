@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-# Принимает словарь с паролем и добавляет его в файл
+# Принимает данные с паролем и добавляет его в файл
 def add_password(site_name, login, password, src='./data/sdrowssap.txt'):
     the_date = datetime.now()
     the_date = the_date.strftime('%H:%M:%S  %d.%m.%Y')
